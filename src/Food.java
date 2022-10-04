@@ -1,6 +1,12 @@
 public class Food {
     private int taste = 3;
-    public static String food;
+    public static String chef;
+    public String foodType;
+
+    public Food(String food){
+        foodType = food;
+    }
+
 
     public int eat(){
         return taste;
@@ -9,8 +15,8 @@ public class Food {
         taste = t;
     }
 
-    public static void foodType(String name){
-        food = name;
+    public static void cookedBy(String name){
+        chef = name;
     }
     public static void rating(int x){
         System.out.println(x+" stars");
